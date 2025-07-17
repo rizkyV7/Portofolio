@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="background-animated"></div>
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button id="darkModeToggle" aria-label="Toggle dark mode" class="theme-toggle">
+                        <span class="icon-theme">
+                            <!-- SVG Sun & Moon -->
+                            <svg class="icon-sun" width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="5" stroke="#FFD600" stroke-width="2"/>
+                                <g stroke="#FFD600" stroke-width="2">
+                                    <line x1="12" y1="1" x2="12" y2="3"/>
+                                    <line x1="12" y1="21" x2="12" y2="23"/>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                                    <line x1="1" y1="12" x2="3" y2="12"/>
+                                    <line x1="21" y1="12" x2="23" y2="12"/>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                                </g>
+                            </svg>
+                            <svg class="icon-moon" width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" stroke="#7f5cff" stroke-width="2" fill="none"/>
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section fade-in">
+            <h2>About Me</h2>
+            <p>
+                Halo! Nama saya Rizky, seorang siswa SMK jurusan Teknik Komputer dan Jaringan (TKJ) yang penuh semangat dalam dunia teknologi, desain, dan kreativitas digital. Saya memiliki minat yang kuat di bidang jaringan komputer, pemrograman, dan pengembangan web, serta terus belajar untuk meningkatkan kemampuan saya melalui berbagai proyek dan pengalaman mandiri.
+                Saya percaya bahwa proses belajar tidak berhenti di ruang kelas. Oleh karena itu, saya aktif mengembangkan karya pribadi, baik berupa desain grafis, proyek website, maupun eksperimen dengan teknologi terkini seperti AI dan IoT.
+                Dalam portofolio ini, saya ingin membagikan beberapa hasil kerja saya sebagai bukti semangat dan dedikasi saya dalam dunia teknologi. Saya selalu terbuka untuk belajar hal baru dan berkolaborasi dalam proyek-proyek yang menantang dan bermanfaat.
+            </p>
+        </section>
+
+        <section id="portfolio" class="section fade-in">
+            <h2>My Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item card glassmorphism">
+                    <div class="portfolio-img parallax" style="background-image:url('assets/project1.png')"></div>
+                    <div class="portfolio-content">
+                        <h3>Modern Shop</h3>
+                        <p>Minimalist e-commerce site with subtle hover and fade-in effects.</p>
+                        <a href="https://github.com/username/project1" target="_blank" class="btn neon">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item card glassmorphism">
+                    <div class="portfolio-img parallax" style="background-image:url('assets/project2.png')"></div>
+                    <div class="portfolio-content">
+                        <h3>Notes App</h3>
+                        <p>Creative notes app with micro-interactions and animated backgrounds.</p>
+                        <a href="https://github.com/username/project2" target="_blank" class="btn neon">View Project</a>
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak project sesuai kebutuhan -->
+            </div>
+        </section>
+
+        <section id="contact" class="section fade-in">
+            <h2>Contact Me</h2>
+            <form id="contact-form" class="card glassmorphism">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="btn neon">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="fade-in">
+        <p>&copy; 2025 Rama Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
